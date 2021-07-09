@@ -1,0 +1,37 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <style>
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+
+    <div class="bg-image">
+        <img src="https://mdbootstrap.com/img/new/standard/city/053.jpg" class="w-100"/>
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)"></div>
+    </div>
+    <div class="container-fluid">
+        <img src="{% static '/img/homepage/home_bg_1.jpg' %}" alt="">
+    </div>
+    <div class="container-fluid">
+        <img src="{% static '/img/homepage/home_bg_2.jpg' %}" alt="">
+    </div>
+    <div class="container-fluid">
+        <img src="{% static '/img/homepage/home_bg_3.jpg' %}" alt="">
+    </div>
+    <div class="container-fluid">
+        <img src="{% static '/img/homepage/home_bg_4.jpg' %}" alt="">
+    </div>
+    <div class="container-fluid">
+        <img src="{% static '/img/homepage/home_bg_5.jpg' %}" alt="">
+    </div>
+
+{% endblock %}
+
